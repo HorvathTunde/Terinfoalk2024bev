@@ -33,6 +33,7 @@
             const map = new google.maps.Map(document.getElementById("map"), {
                 zoom: 15,
                 center: belgaEtterem,  // A térkép középpontja a Belga Étterem
+                 streetViewControl: false  // Utcakép vezérlő letiltása
             });
 
             // Marker elhelyezése a Belga Étteremnél
@@ -72,5 +73,6 @@
     <!-- A Google Maps API betöltése, a saját API kulcsoddal -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCk2v8WtXB57rTW6EH9xFkYxk88u02Xrx4&callback=initMap" 
     async defer></script>
+
 </body>
 </html>
